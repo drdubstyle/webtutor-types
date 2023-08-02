@@ -1,6 +1,12 @@
 
 declare namespace ms_tools {
-  function get_url_from_catalog(sCatalogNameiID: string): any;
+  /**
+   * Функция возвращает ссылку на объект в локальной дирректории
+   * @param sCatalogNameParam название каталога 
+   * @param iIDParam ID объекта
+   */
+  function get_url_from_catalog(sCatalogNameParam: string, iIDParam: number): any;
+
   function view_open_doc(sCatalogNameiIDTopElem: string): any;
   function view_delete_doc(_catalog_name: string): any;
   function raise_system_event(_code: string, _system_eventID: any, _objectDocID: any, _objectDoc: any): any;
